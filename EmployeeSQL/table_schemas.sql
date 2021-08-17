@@ -49,3 +49,13 @@ CREATE TABLE dept_manager (
 SELECT *
 FROM dept_manager;
 
+-- Create titles table
+CREATE TABLE titles (
+	title_id VARCHAR NOT NULL,
+	title VARCHAR NOT NULL,
+	PRIMARY KEY (title_id)
+);
+
+-- View titles table
+SELECT * 
+FROM titles;
