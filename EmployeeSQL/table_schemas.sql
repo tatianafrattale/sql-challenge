@@ -59,3 +59,14 @@ CREATE TABLE titles (
 -- View titles table
 SELECT * 
 FROM titles;
+
+-- Create salaries table
+CREATE TABLE salaries (
+	emp_no INT NOT NULL,
+	salary INT NOT NULL,
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+);
+
+-- View salaries table
+SELECT *
+FROM salaries;
