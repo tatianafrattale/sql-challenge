@@ -36,3 +36,16 @@ CREATE TABLE dept_emp (
 -- View department employees table
 SELECT *
 FROM dept_emp;
+
+-- Create department managers table
+CREATE TABLE dept_manager (
+	dept_no VARCHAR NOT NULL,
+	emp_no INT NOT NULL,
+	FOREIGN KEY (dept_no) REFERENCES departments(dept_no),
+	FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
+);
+
+-- View department managers table
+SELECT *
+FROM dept_manager;
+
